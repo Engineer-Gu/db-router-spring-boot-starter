@@ -4,27 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="69b37391-f3ae-489b-beb7-64de19c2c7c9" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lovegu/middleware/db/router/DBContextHolder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lovegu/middleware/db/router/DBRouterBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lovegu/middleware/db/router/DBRouterConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lovegu/middleware/db/router/DBRouterJoinPoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lovegu/middleware/db/router/annotation/DBRouter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lovegu/middleware/db/router/config/DataSourceAutoConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lovegu/middleware/db/router/dynamic/DynamicDataSource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lovegu/middleware/db/router/dynamic/DynamicMybatisPlugin.java" afterDir="false" />
+    <list default="true" id="69b37391-f3ae-489b-beb7-64de19c2c7c9" name="变更" comment="Mybatis拦截器插件，通过对 SQL 语句的拦截处理，修改分表信息">
       <change afterPath="$PROJECT_DIR$/src/main/java/com/lovegu/middleware/db/router/strategy/IDBRouterStrategy.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/lovegu/middleware/db/router/strategy/impl/DBRouterStrategyHashCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lovegu/middleware/db/router/util/PropertyUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/spring.factories" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/com/lovegu/middleware/test/ApiTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/com/lovegu/middleware/test/IUserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,8 +71,79 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1677221453184</updated>
-      <workItem from="1677221455764" duration="7975000" />
+      <workItem from="1677221455764" duration="12069000" />
     </task>
+    <task id="LOCAL-00001" summary="路由注解">
+      <created>1677250382665</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1677250382665</updated>
+    </task>
+    <task id="LOCAL-00002" summary="动态数据源获取，每当切换数据源，都要从这个里面进行获取">
+      <created>1677250421328</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1677250421328</updated>
+    </task>
+    <task id="LOCAL-00003" summary="属性工具类">
+      <created>1677250445556</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1677250445556</updated>
+    </task>
+    <task id="LOCAL-00004" summary="数据路由配置">
+      <created>1677250482934</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1677250482934</updated>
+    </task>
+    <task id="LOCAL-00005" summary="数据源上下文">
+      <created>1677250506511</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1677250506511</updated>
+    </task>
+    <task id="LOCAL-00006" summary="数据源配置解析">
+      <created>1677250544742</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1677250544742</updated>
+    </task>
+    <task id="LOCAL-00007" summary="数据源基础配置">
+      <created>1677250602986</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1677250602986</updated>
+    </task>
+    <task id="LOCAL-00008" summary="路由策略，分表标记">
+      <created>1677285986254</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1677285986254</updated>
+    </task>
+    <task id="LOCAL-00009" summary="数据路由切面，通过自定义注解的方式，拦截被切面的方法，进行数据库路由">
+      <created>1677287263123</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1677287263123</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Mybatis拦截器插件，通过对 SQL 语句的拦截处理，修改分表信息">
+      <created>1677288530008</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1677288530008</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -103,6 +159,19 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="路由注解" />
+    <MESSAGE value="动态数据源获取，每当切换数据源，都要从这个里面进行获取" />
+    <MESSAGE value="属性工具类" />
+    <MESSAGE value="数据路由配置" />
+    <MESSAGE value="数据源上下文" />
+    <MESSAGE value="数据源配置解析" />
+    <MESSAGE value="数据源基础配置" />
+    <MESSAGE value="路由策略，分表标记" />
+    <MESSAGE value="数据路由切面，通过自定义注解的方式，拦截被切面的方法，进行数据库路由" />
+    <MESSAGE value="Mybatis拦截器插件，通过对 SQL 语句的拦截处理，修改分表信息" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mybatis拦截器插件，通过对 SQL 语句的拦截处理，修改分表信息" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
